@@ -7,7 +7,8 @@ export const parseSeries = (query) => {
   return found ? {
     title: clear(found[1]),
     s: parseInt(found[2]),
-    ep: parseInt(found[3])
+    ep: parseInt(found[3]),
+    type: 'show'
   } : null;
 };
 
@@ -17,7 +18,8 @@ export const parseMovies = (query) => {
 
   return found ? {
     title: clear(found[1]),
-    year: parseInt(found[2])
+    year: parseInt(found[2]),
+    type: 'movie'
   } : null;
 };
 
