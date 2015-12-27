@@ -1,6 +1,6 @@
 {
   "name": "split-torrent-release",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "split torrent releases filenames",
   "main": "dist/index.js",
   "scripts": {
