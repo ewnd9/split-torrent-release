@@ -1,0 +1,35 @@
+{
+  "name": "split-torrent-release",
+  "version": "1.0.0",
+  "description": "split torrent releases filenames",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node cli.js",
+    "test": "ava",
+    "test:watch": "nodemon test/*.js --exec ava",
+    "coveralls": "nyc --reporter=text ava",
+    "prebuild": "rm -rf dist && mkdir dist",
+    "build": "babel -d dist/ src/",
+    "prepublish": "npm run build"
+  },
+  "preferGlobal": "false",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ewnd9/split-torrent-release.git"
+  },
+  "keywords": [
+    "torrent",
+    "tv",
+    "movies"
+  ],
+  "author": "ewnd9 <ewndnine@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^0.8.0",
+    "babel": "^5.8.21",
+    "coveralls": "^2.11.6",
+    "nodemon": "^1.8.1",
+    "nyc": "^4.0.1"
+  }
+}
