@@ -18,6 +18,14 @@ test('generic series', t => {
   });
 });
 
+test('generic season', t => {
+  t.same(split('Master of None S01 Season 1 Complete 1080p WEB-DL [rartv]'), {
+    type: 'season',
+    title: 'Master of None',
+    s: 1
+  });
+});
+
 test('generic movie', t => {
   t.same(split('M.N.Plemya.Izgoyev.2015.DUAL.BDRip.720p.-HELLYWOOD.mkv'), {
     type: 'movie',

@@ -12,6 +12,17 @@ export const parseSeries = (query) => {
   } : null;
 };
 
+export const parseSeason = (query) => {
+  const regex = /(.+)\s[sS]([\d]+)/;
+  const found = query.match(regex);
+
+  return found ? {
+    title: clear(found[1]),
+    s: parseInt(found[2]),
+    type: 'season'
+  } : null;
+};
+
 export const parseMovies = (query) => {
   const regex = /^(.+)((19|20)\d\d)/;
   const found = query.match(regex);
@@ -28,6 +39,12 @@ export default (query) => {
 
   if (seriesResult) {
     return seriesResult;
+  }
+
+  const seasonResult = parseSeason(query);
+
+  if (seasonResult) {
+    return seasonResult;
   }
 
   return parseMovies(query);
