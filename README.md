@@ -61,6 +61,10 @@ test('generic movie', t => {
 });
 ```
 
+## Related
+
+- [parse-torrent-name](https://github.com/jzjzjzj/parse-torrent-name) 
+
 ## License
 
 MIT © [ewnd9](http://ewnd9.com)
