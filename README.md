@@ -2,7 +2,7 @@
 
 ## Install
 
-```
+```sh
 $ npm install split-torrent-release --save
 ```
 
@@ -63,7 +63,8 @@ test('generic movie', t => {
 
 ## Related
 
-- [parse-torrent-name](https://github.com/jzjzjzj/parse-torrent-name) 
+- [parse-torrent-name](https://github.com/jzjzjzj/parse-torrent-name)
+- [movie-title](https://github.com/danielhusar/movie-title)
 
 ## License
 
